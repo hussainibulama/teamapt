@@ -7,11 +7,6 @@ import star2 from "./imgs/star2.png";
 import star3 from "./imgs/star3.png";
 import star4 from "./imgs/star4.png";
 import star5 from "./imgs/star5.png";
-import r1 from "./imgs/r11.svg";
-import r2 from "./imgs/r12.svg";
-import r3 from "./imgs/r13.svg";
-import r4 from "./imgs/r14.svg";
-import r5 from "./imgs/r15.svg";
 import coinright from "./imgs/coinright.svg";
 import coinleft from "./imgs/coinleft.svg";
 import coinpot from "./imgs/coinpot.png";
@@ -42,10 +37,10 @@ function App() {
             <br></br>Power your dreams!
           </h3>
           <p>
-            Stand a chance to win<br></br>
+            Stand a chance to win <br></br>
             <b>
               <span>N</span>3,000,000
-            </b>
+            </b>{" "}
             everyday for the next 5 days
           </p>
         </div>

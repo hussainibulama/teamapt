@@ -17,9 +17,9 @@
   align-items: center;
   align-self: center;
   align-content: center;
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
-  top: 2em;
+  top: 0.5em;
 }
 .tops img {
   position: relative;
@@ -85,20 +85,36 @@
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 63.7px;
+  font-size: 45px;
+  line-height: 40px;
   letter-spacing: -1.5%;
   color: #fff;
+  animation: fade-in-bottom 700ms ease-in-out both;
+  animation-delay: 500ms;
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .others .pros p {
   position: relative;
   top: -1em;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 29.43px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 23px;
   letter-spacing: -6%;
   color: #fff;
+  animation: fade-in-bottom 700ms ease-in-out both;
+  animation-delay: 1s;
 }
 .others .pros p b span {
   position: relative;
@@ -109,6 +125,7 @@
   width: 450px;
   height: 257px;
   display: flex;
+  top: -1.2em;
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
@@ -123,6 +140,8 @@
     inset 0px 2px 0px rgba(255, 255, 255, 0.24);
   border-radius: 8px;
   flex-grow: 0;
+  animation: fade-in-bottom 700ms ease-in-out both;
+  animation-delay: 250ms;
 }
 .others .circlic .top {
   position: relative;
@@ -131,7 +150,7 @@
   align-self: center;
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25.6px;
   vertical-align: top;
 }
@@ -185,8 +204,10 @@
 }
 .others .buttomer {
   position: relative;
-  top: 1em;
+  top: 0em;
   cursor: pointer;
+  animation: fade-in-bottom 700ms ease-in-out both;
+  animation-delay: 400ms;
 }
 .others .buttomer .button {
   display: flex;
@@ -219,23 +240,28 @@
   position: relative;
   width: 1000px;
   margin: 0 auto;
+  top: -4em;
   bottom: 0;
   text-align: center;
+  animation: fade-in-bottom 700ms ease-in-out both;
+  animation-delay: 250ms;
 }
 .bots .coinpots {
   position: relative;
 }
 .bots .coinpots img {
-  position: relative;
+  position: absolute;
   width: 50%;
-  height: 20%;
+  top: 0;
+  bottom: 0;
   object-fit: cover;
+  margin: 0 auto;
+  left: 25%;
   object-position: 0 25px;
-  top: 2em;
 }
 
 .allall {
-  bottom: 0;
+  bottom: -9em;
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -251,14 +277,14 @@
 
 .allall .a1 {
   height: 60em;
-  bottom: -4em;
+  bottom: 0em;
   left: -14em;
   animation: spin-clockwise1 10s linear infinite;
 }
 
 .allall .a2 {
   height: 60em;
-  bottom: -4em;
+  bottom: 0em;
   left: -14em;
   transform: scaleY(-1);
   animation: spin-clockwise2 15s linear infinite;
@@ -283,7 +309,7 @@
 .coiner {
   position: relative;
   display: flex;
-  width: 500px;
+  width: 600px;
   height: 50px;
   margin: 0 auto;
   flex-direction: row;
@@ -375,4 +401,415 @@
   left: 60%;
   top: 5%;
   transform: scale(0.9);
+}
+@media screen and (max-width: 736px) {
+  .App {
+    position: relative;
+    background: url("./imgs/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .tops {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    top: 0.5em;
+  }
+  .tops img {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    object-fit: contain;
+  }
+  .tops .sider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .tops .sider .small {
+    position: relative;
+    margin-left: 1em;
+  }
+  .tops .sider .small h3 {
+    position: relative;
+    top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19.62px;
+    vertical-align: top;
+    color: #fff;
+  }
+  .tops .sider .small h3 span {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    vertical-align: top;
+    line-height: 15.26px;
+    font-size: 14px;
+  }
+  .others {
+    position: relative;
+    top: -1.5em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .others .pros {
+    position: relative;
+    width: 100%;
+    background-image: url("./imgs/topstars.png");
+    background-repeat: no-repeat;
+    background-size: 90% 60%;
+    background-position: center;
+  }
+  .others .pros h3 span {
+    position: relative;
+    font-weight: 300;
+  }
+  .others .pros h3 br {
+    display: none;
+  }
+
+  .others .pros h3 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -1.5%;
+    color: #fff;
+    animation: fade-in-bottom 700ms ease-in-out both;
+    animation-delay: 500ms;
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .others .pros p br {
+    display: none;
+  }
+  .others .pros p {
+    font-size: 16px;
+  }
+  .others .pros p b span {
+    position: relative;
+    text-decoration: line-through;
+  }
+  .others .circlic {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    top: -1.2em;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 27px;
+    gap: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.39) -213.5%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17),
+      inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    flex-grow: 0;
+    animation: fade-in-bottom 700ms ease-in-out both;
+    animation-delay: 250ms;
+  }
+  .others .circlic .top {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-self: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 25.6px;
+    vertical-align: top;
+  }
+  .others .circlic .middle {
+    position: relative;
+    top: -0.5em;
+  }
+  .others .circlic .middle p {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    letter-spacing: -2%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25.6px;
+    vertical-align: top;
+    margin: 0;
+  }
+  .others .circlic .bottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    align-items: baseline;
+    padding: 10px;
+    gap: 12px;
+    width: 100%;
+    height: 75px;
+    max-height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .others .circlic .bottom div {
+    position: relative;
+    top: -0.5em;
+  }
+  .others .circlic .bottom p {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+    color: #ffffff;
+    left: -0.5em;
+    top: -0.4em;
+    letter-spacing: -0.02em;
+  }
+  .others .buttomer {
+    position: relative;
+    top: 0em;
+    cursor: pointer;
+    animation: fade-in-bottom 700ms ease-in-out both;
+    animation-delay: 400ms;
+  }
+  .others .buttomer .button {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    gap: 4px;
+    position: relative;
+    width: 225px;
+    height: 56px;
+    border: none;
+    background: #ecab03;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: top;
+    color: #fff;
+    text-align: center;
+  }
+  .others .buttomer .button img {
+    position: relative;
+    left: 2em;
+  }
+  .bots {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 0em;
+    bottom: 0;
+    text-align: center;
+    animation: fade-in-bottom 700ms ease-in-out both;
+    animation-delay: 250ms;
+  }
+  .bots .coinpots {
+    position: relative;
+  }
+  .bots .coinpots img {
+    position: absolute;
+    width: 100%;
+    top: 2em;
+    left: 1%;
+    bottom: 0;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .allall {
+    bottom: -8em;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    height: 60em;
+    overflow: hidden;
+  }
+  .allall > * {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    transform-origin: bottom;
+  }
+
+  .allall .a1 {
+    height: 60em;
+    bottom: 0em;
+    left: -35em;
+    right: 0;
+    animation: spin-clockwise1 10s linear infinite;
+  }
+
+  .allall .a2 {
+    display: none;
+    height: 60em;
+    bottom: 0em;
+    left: -32em;
+    right: 0;
+    transform: scaleY(-1);
+    animation: spin-clockwise2 15s linear infinite;
+    /* animation-delay: 10s; */
+  }
+  @keyframes spin-clockwise1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes spin-clockwise2 {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .coiner {
+    position: relative;
+    display: flex;
+    width: 150%;
+    height: 50px;
+    left: -6em;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .coiner .cright {
+    position: relative;
+    top: 0;
+    animation: bing 5s linear infinite;
+  }
+  .coiner .cleft {
+    position: relative;
+    top: 50px;
+    animation: bing 4s linear infinite;
+  }
+  @keyframes bing {
+    0%,
+    100% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  .bubblewrap {
+    bottom: -100px;
+    position: relative;
+  }
+  .bubble {
+    position: absolute;
+    margin-top: 0px;
+  }
+  @keyframes animateBubble {
+    0% {
+      margin-top: 0px;
+      z-index: 100;
+    }
+    100% {
+      margin-top: -40%;
+      z-index: 100;
+    }
+  }
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 30px;
+    }
+  }
+  .bubblewrap .a1 {
+    animation: animateBubble 25s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    left: 35%;
+    top: 5%;
+    transform: scale(0.9);
+  }
+  .bubblewrap .a2 {
+    animation: animateBubble 20s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    left: 40%;
+    top: 5%;
+    animation-delay: 6s;
+
+    transform: scale(0.9);
+  }
+  .bubblewrap .a3 {
+    animation: animateBubble 28s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    animation-delay: 10s;
+
+    left: 45%;
+    top: 5%;
+    transform: scale(0.9);
+  }
+  .bubblewrap .a4 {
+    animation: animateBubble 22s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    animation-delay: 12s;
+    left: 55%;
+    top: 5%;
+    transform: scale(0.9);
+  }
+  .bubblewrap .a5 {
+    animation: animateBubble 30s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    animation-delay: 14s;
+
+    left: 60%;
+    top: 5%;
+    transform: scale(0.9);
+  }
 }
